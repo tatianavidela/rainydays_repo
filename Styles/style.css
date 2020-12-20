@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "Josefin Sans", sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+	font-family: "IM Fell English SC", serif;
+	src: url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swaphttps://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+	font-family: "adobe-caslon-pro", serif;
+	src: url("https://use.typekit.net/jjs7nyr.css");
+}
+/*header*/
+body {
+	font-family: "Josefin Sans", sans-serif;
+}
+.rainydays-logo {
+	width: 50%;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul {
+	padding: 1%;
+}
+nav {
+	background-color: #0a3641;
+}
+
+.navlist {
+	margin-left: 50%;
+}
+
+a {
+	text-decoration: none;
+}
+
+header a {
+	color: #ddd3ae;
+}
+
+.subscribe-here {
+	color: #9d9fa9;
+}
+
+.new-collection {
+	font-family: "IM Fell English SC", serif;
+}
+.city-collection {
+	font-family: "adobe-caslon-pro", serif;
+}
+/*footer*/
+footer {
+	background-color: #0a3641;
+}
+
+footer ul li {
+	display: inline-block;
+}
