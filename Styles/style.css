@@ -7,78 +7,51 @@
 	src: url("https://use.typekit.net/jjs7nyr.css");
 }
 
-body {
+* {
 	font-family: "Josefin Sans", sans-serif;
-	background-color: #f8f7f4;
 }
 
 a {
 	text-decoration: none;
 }
-/*header*/
-header {
-	width: 1000px;
-}
-
-nav {
-	display: none;
-	background-color: #0a3641;
-}
-
-#hamburger-menu {
-	display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-	display: block;
-}
-
-.rainydays-logo {
-	width: 180px;
-	padding-top: 10px;
-}
-
-nav ul li {
-	padding: 1%;
-	display: inline-block;
-}
-
 header a {
 	color: #ddd3ae;
+	padding: 20px;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
 }
-
-.subscribe-here a {
-	color: #9d9fa9;
-}
-
-/*main*/
-
-.promo1-homepage {
-	display: flex;
-}
-.new-collection {
-	font-family: "IM Fell English SC", serif;
-	color: #9c3611;
-}
-a.cta-New-Collection {
-	text-decoration: none;
-	color: #000000;
-}
-
-.city-collection {
-	font-family: "adobe-caslon-pro", serif;
-}
-/*footer*/
+header,
 footer {
 	background-color: #0a3641;
-	padding: 10px;
-	margin: 0px;
+}
+nav ul {
+	padding: 0px;
+}
+nav li {
+	display: inline-block;
+}
+.logo {
+	max-width: 180px;
+	padding-top: 10px;
+}
+.subscribe-here {
+	color: #9d9fa9;
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 12px;
+}
+.subscribe-here a {
+	color: #9d9fa9;
+	text-decoration: underline;
+	padding: 0px;
 }
 
 footer li {
 	display: inline-block;
+	padding: 20px;
 }
-
-footer a {
-	color: #ddd3ae;
+footer li a {
+	color: #9d9fa9;
 }
