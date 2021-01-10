@@ -10,7 +10,9 @@
 * {
 	font-family: "Josefin Sans", sans-serif;
 }
-
+body {
+	margin: 0px;
+}
 a {
 	text-decoration: none;
 }
@@ -20,6 +22,27 @@ header a {
 	font-style: normal;
 	font-weight: 300;
 	text-transform: uppercase;
+	font-size: 18px;
+}
+.fa-portrait,
+.fa-heart,
+.fa-shopping-bag {
+	font-size: 30px;
+}
+.fa-portrait {
+	position: relative;
+	bottom: 40px;
+	left: 50px;
+}
+.fa-heart {
+	position: relative;
+	bottom: 40px;
+	left: 75px;
+}
+.fa-shopping-bag {
+	position: relative;
+	bottom: 40px;
+	left: 37px;
 }
 header,
 footer {
@@ -46,6 +69,7 @@ nav li {
 	color: #9d9fa9;
 	text-decoration: underline;
 	padding: 0px;
+	font-size: 14px;
 }
 
 footer li {
@@ -54,4 +78,38 @@ footer li {
 }
 footer li a {
 	color: #9d9fa9;
+}
+
+/*home page*/
+.new-collection {
+	padding: 20px;
+	font-family: "IM Fell English SC", serif;
+	color: #9c3611;
+	font-size: 40px;
+	letter-spacing: 16px;
+}
+.new-collection a {
+	font-size: 14px;
+	color: black;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 5px;
+	padding: 12px;
+}
+
+.city-collection {
+	padding: 18px;
+	font-family: "Big Caslon", sans-serif;
+	font-size: 48px;
+	letter-spacing: 4px;
+}
+.city-collection a {
+	color: black;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-family: "Big Caslon", sans-serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 12px;
 }
