@@ -12,6 +12,7 @@
 }
 body {
 	margin: 0px;
+	background-color: #f8f7f4;
 }
 a {
 	text-decoration: none;
@@ -46,18 +47,26 @@ header a {
 }
 header,
 footer {
+	display: flex;
 	background-color: #0a3641;
-}
-nav ul {
-	padding: 0px;
-}
-nav li {
-	display: inline-block;
+	align-items: center;
 }
 .logo {
 	max-width: 180px;
 	padding-top: 10px;
+	margin-left: 12px;
 }
+nav {
+	margin-left: 4px;
+}
+nav ul {
+	padding: 0px;
+	padding-top: 70px;
+}
+nav li {
+	display: inline-block;
+}
+
 .subscribe-here {
 	color: #9d9fa9;
 	background-color: white;
@@ -75,21 +84,36 @@ nav li {
 footer li {
 	display: inline-block;
 	padding: 20px;
+	margin: 40px auto;
 }
 footer li a {
 	color: #9d9fa9;
 }
 
 /*home page*/
-.new-collection {
+
+.new-collection-homepage {
+	display: flex;
+}
+.new-collection_img {
+	background-image: url("../images/2pexels-matt-hardy-2755165.jpg");
+	min-height: 160vh;
+	background-size: cover;
+	background-position-y: top;
+	background-position-x: center;
+}
+.new-collection-homepage h1 {
 	padding: 20px;
 	font-family: "IM Fell English SC", serif;
 	color: #9c3611;
 	font-size: 40px;
 	letter-spacing: 16px;
 }
-.new-collection a {
-	font-size: 14px;
+.new-collection-homepage > * {
+	flex: 1;
+}
+.new-collection-homepage a {
+	font-size: 18px;
 	color: black;
 	text-decoration: underline;
 	text-transform: uppercase;
@@ -97,19 +121,42 @@ footer li a {
 	letter-spacing: 5px;
 	padding: 12px;
 }
-
-.city-collection {
-	padding: 18px;
-	font-family: "Big Caslon", sans-serif;
-	font-size: 48px;
-	letter-spacing: 4px;
+.city-collection-homepage {
+	display: flex;
 }
-.city-collection a {
-	color: black;
+.city-collection-homepage h2 {
+	padding: 20px;
+	font-family: "adobe-caslon-pro", serif;
+	color: #000000;
+	font-size: 60px;
+	font-weight: normal;
+}
+.city-collection-homepage a {
+	padding: 20px;
+	font-family: "adobe-caslon-pro", serif;
+	color: #000000;
+	font-size: 24px;
 	text-decoration: underline;
 	text-transform: uppercase;
-	font-family: "Big Caslon", sans-serif;
-	font-size: 14px;
-	letter-spacing: 2px;
-	padding: 12px;
+	font-weight: normal;
+}
+.city-collection-homepage > * {
+	flex: 1;
+}
+.city-collection_img {
+	background-image: url("../images/2pexels-cottonbro-3205741.jpg");
+	min-height: 160vh;
+	background-size: cover;
+	background-position-y: bottom;
+	background-position-x: center;
+}
+
+.jacket-list-cta {
+	display: flex;
+	margin: 300px 200px;
+	min-height: 40vh;
+	max-width: 600vh;
+	background-image: url("../images/findthejacket_background.jpg");
+	background-size: cover;
+	background-position: center;
 }
