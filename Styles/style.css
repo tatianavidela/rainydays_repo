@@ -11,17 +11,52 @@
 	font-family: "Josefin Sans", sans-serif;
 }
 body {
+	min-height: 100%;
+	min-width: 100%;
 	margin: 0px;
 	background-color: #f8f7f4;
 }
+
+header {
+	background-color: #0a3641;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+nav ul {
+	padding: 0px;
+	padding-top: 20px;
+}
+nav li {
+	display: inline-block;
+}
+
+footer {
+	background-color: #0a3641;
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer li {
+	display: inline-block;
+	padding: 20px;
+	margin: 40px auto;
+}
+
+/*links*/
 a {
 	text-decoration: none;
 }
 header a {
 	color: #ddd3ae;
-	padding: 20px;
+	padding: 20px 40px;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
+	letter-spacing: 3px;
 	text-transform: uppercase;
 	font-size: 18px;
 }
@@ -33,40 +68,23 @@ header a {
 .fa-portrait {
 	position: relative;
 	bottom: 40px;
-	left: 50px;
+	left: 60px;
 }
 .fa-heart {
 	position: relative;
 	bottom: 40px;
-	left: 75px;
+	left: 90px;
 }
 .fa-shopping-bag {
 	position: relative;
 	bottom: 40px;
-	left: 37px;
-}
-header,
-footer {
-	display: flex;
-	background-color: #0a3641;
-	align-items: center;
+	left: 46px;
 }
 .logo {
 	max-width: 180px;
 	padding-top: 10px;
 	margin-left: 12px;
 }
-nav {
-	margin-left: 4px;
-}
-nav ul {
-	padding: 0px;
-	padding-top: 70px;
-}
-nav li {
-	display: inline-block;
-}
-
 .subscribe-here {
 	color: #9d9fa9;
 	background-color: white;
@@ -80,16 +98,10 @@ nav li {
 	padding: 0px;
 	font-size: 14px;
 }
-
-footer li {
-	display: inline-block;
-	padding: 20px;
-	margin: 40px auto;
-}
 footer li a {
+	font-size: 120%;
 	color: #9d9fa9;
 }
-
 /*home page*/
 
 .new-collection-homepage {
@@ -102,17 +114,24 @@ footer li a {
 	background-position-y: top;
 	background-position-x: center;
 }
+.new-collection {
+	position: relative;
+}
 .new-collection-homepage h1 {
+	position: absolute;
+	text-align: center;
+	left: 24%;
+	top: 60px;
 	padding: 20px;
 	font-family: "IM Fell English SC", serif;
 	color: #9c3611;
 	font-size: 40px;
 	letter-spacing: 16px;
 }
-.new-collection-homepage > * {
-	flex: 1;
-}
 .new-collection-homepage a {
+	position: relative;
+	top: 200px;
+	left: 42%;
 	font-size: 18px;
 	color: black;
 	text-decoration: underline;
@@ -120,6 +139,9 @@ footer li a {
 	font-weight: 600;
 	letter-spacing: 5px;
 	padding: 12px;
+}
+.new-collection-homepage > * {
+	flex: 1;
 }
 .city-collection-homepage {
 	display: flex;
@@ -159,4 +181,8 @@ footer li a {
 	background-image: url("../images/findthejacket_background.jpg");
 	background-size: cover;
 	background-position: center;
+}
+
+.jacket-list-cta h3 {
+	text-align: center;
 }
