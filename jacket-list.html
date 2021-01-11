@@ -1,44 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="description" content="Outdoors jackets from Rainy Days">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rainy Days</title> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/jjs7nyr.css">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta name="description" content="Outdoors jackets from Rainy Days">
+    <title>Rainy Days</title> 
   </head>
   <body>
     <header>
-      <a href="index.html"> <img src="images/RainyDays_Logolys kopi.png" alt="Rainy Days logo with mountain on the bakground" class="logo" /></a>
       <nav>
         <ul>
           <li><a href="Collection.html">Collection</a></li>
           <li><a href="Women.html">Women</a></li>
           <li><a href="Men.html">Men</a></li>
+          <li><a href="index.html"> <img src="images/RainyDays_Logolys kopi.png" alt="Rainy Days logo with mountain on the bakground" class="logo" /></a></li>
           <li><a href="Login.html"> <i class="fas fa-portrait"></i> Login</a></li>
-          <li><a href="Favourites.html"><i class="far fa-heart"></i>Favourites</a></li>
-          <li><a href="Bag.html"><i class="fas fa-shopping-bag"></i>Bag</a></li>
+          <li><a href="Favourites.html"><i class="far fa-heart"></i> Favourites</a></li>
+          <li><a href="Bag.html"><i class="fas fa-shopping-bag"></i> Bag</a></li>
         </ul> 
-      </nav>   
-         <div class="subscribe-here">
-            <a href="contact.html">Click here</a> to subscribe to our newsletter and be one of the first to see our new collections and our sales 
-         </div>    
+      </nav>        
     </header>
-    <main>
+
+    <main class="jackets">
+      <div class="breadcrumbs">
+        <a href=""> home - </a><a href=""> women - </a><a href="">all jacket</a>
+      </div>
+      <section>
+
+        <div class="sort"> 
+          <h2>sort by</h2> 
+          <input type="radio" name="sort" value="most-popular" id="most-popular"><label for="most-popular">most popular</label>
+          <input type="radio" name="sort" value="high-low" id="high-low"><label for="high-low">price - high to low</label>
+          <input type="radio" name="sort" value="low-high" id="low-high"><label for="low-high">price - low to high</label>
+          <input type="radio" name="sort" value="newest" id="newest"><label for="newest">newest</label>
+       </div>
+
+       <div class="filter">
+         <h3>filter</h3>
+         <label for="category">category:</label>
+         <select name="category" id="category">
+           <option value="all-jackets">all jackets</option>
+           <option value="winter">winter</option>
+           <option value="windbreakers">windbreakers</option>
+           <option value="parkas">parkas</option>
+           <option value="casual">casual</option>
+           <option value="sale">sale</option>
+         </select>
+
+         <label for="size">size</label>
+         <select name="size" id="size">
+           <option value="xs">xs</option>
+           <option value="s">s</option>
+           <option value="m">m</option>
+           <option value="l">l</option>
+           <option value="xl">xl</option>
+           <option value="xxl">xxl</option>
+         </select>
+
+         <label for="activity">activity:</label>
+         <select name="activity" id="activity">
+           <option value="skiing">skiing</option>
+           <option value="hiking">hiking</option>
+           <option value="canoeing">canoeing</option>
+           <option value="climbing">climbing</option>
+         </select>
+
+       </div>
+      </section>
+       
+      <h1>all womens'jackets</h1>
+
+
     </main>
+
     <footer>
-        <section class="social-media">
-        </section>
-        <section>
-          <ul>
-            <li><a href="">Subscribe</a></li>
-            <li><a href="">Returns and Shipping</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </section>
-      </footer>
-    </body>
-  </html>
+      <div class="social-media">
+        <li><a href=""><i class="fab fa-instagram" alt="instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook" alt="facebook"></i></a></li>
+        <li><a href=""><i class="fab fa-youtube" alt="youtube"></i></a></li>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">Subscribe</a></li>
+          <li><a href="">Returns and Shipping</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

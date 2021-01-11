@@ -14,21 +14,22 @@ body {
 	min-height: 100%;
 	min-width: 100%;
 	margin: 0px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 	background-color: #f8f7f4;
 }
 
 header {
-	background-color: #0a3641;
+	display: flex;
 	align-items: center;
 }
 
 nav {
-	display: flex;
-	justify-content: space-evenly;
+	background-color: #0a3641;
+	width: 100%;
 }
 nav ul {
 	padding: 0px;
-	padding-top: 20px;
 }
 nav li {
 	display: inline-block;
@@ -185,4 +186,15 @@ footer li a {
 
 .jacket-list-cta h3 {
 	text-align: center;
+}
+
+/*jacket-list*/
+
+.sort label::after {
+	content: "";
+	display: block;
+}
+
+.filter {
+	display: table-column;
 }
