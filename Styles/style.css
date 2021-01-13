@@ -61,6 +61,44 @@ header a {
 	text-transform: uppercase;
 	font-size: 18px;
 }
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-button {
+	color: #ddd3ae;
+	background-color: transparent;
+	border: none;
+	padding: 16px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #0a3641;
+	min-width: 300px;
+	border: none;
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0);
+}
+.dropdown-content a {
+	color: #ddd3ae;
+	padding: 12px 2px;
+	font-size: 16px;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown:hover .dropdown-button {
+	text-decoration: underline;
+}
+
 .fa-portrait,
 .fa-heart,
 .fa-shopping-bag {
@@ -107,6 +145,9 @@ footer li a {
 .new-collection-homepage {
 	display: flex;
 }
+.new-collection-homepage > * {
+	flex: 1;
+}
 .new-collection_img {
 	background-image: url("../images/2pexels-matt-hardy-2755165.jpg");
 	min-height: 160vh;
@@ -140,30 +181,37 @@ footer li a {
 	letter-spacing: 5px;
 	padding: 12px;
 }
-.new-collection-homepage > * {
+
+.city-collection-homepage > * {
 	flex: 1;
 }
 .city-collection-homepage {
 	display: flex;
 }
+.city-collection {
+	position: relative;
+}
 .city-collection-homepage h2 {
+	position: absolute;
 	padding: 20px;
+	top: 200px;
+	left: 90px;
 	font-family: "adobe-caslon-pro", serif;
 	color: #000000;
-	font-size: 60px;
+	font-size: 80px;
 	font-weight: normal;
 }
 .city-collection-homepage a {
+	position: relative;
 	padding: 20px;
+	top: 390px;
+	left: 90px;
 	font-family: "adobe-caslon-pro", serif;
 	color: #000000;
 	font-size: 24px;
 	text-decoration: underline;
 	text-transform: uppercase;
 	font-weight: normal;
-}
-.city-collection-homepage > * {
-	flex: 1;
 }
 .city-collection_img {
 	background-image: url("../images/2pexels-cottonbro-3205741.jpg");
@@ -174,20 +222,30 @@ footer li a {
 }
 
 .jacket-list-cta {
-	display: flex;
-	margin: 300px 200px;
-	min-height: 40vh;
-	max-width: 600vh;
+	margin: 100px 200px;
 	background-image: url("../images/findthejacket_background.jpg");
-	background-size: cover;
-	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 330px;
+	width: auto;
+	display: flex;
+	align-items: center;
 }
-
+.jacket-list-cta a {
+	color: black;
+	font-size: 80px;
+	text-transform: uppercase;
+}
 .jacket-list-cta h3 {
-	text-align: center;
+	padding-left: 100px;
 }
 
 /*jacket-list*/
+
+.sort-filter {
+	border: solid;
+	width: 10%;
+}
 
 .sort label::after {
 	content: "";
