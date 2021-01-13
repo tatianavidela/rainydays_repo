@@ -19,17 +19,16 @@ body {
 	background-color: #f8f7f4;
 }
 
-header > * {
-	display: flex;
-}
-
 nav {
 	background-color: #0a3641;
-	width: 100%;
+	min-width: max-content;
 	padding: 0px;
+	display: flex;
 	justify-content: center;
 }
-
+nav ul {
+	padding: 0px;
+}
 nav li {
 	display: inline-block;
 	text-align: center;
@@ -70,6 +69,7 @@ header a {
 	background-color: transparent;
 	border: none;
 	padding: 16px;
+	margin: auto 30px;
 	font-size: 18px;
 	text-transform: uppercase;
 }
@@ -289,4 +289,72 @@ footer li a {
 
 .discover img {
 	width: 600px;
+}
+
+/*contact us*/
+
+.contactus {
+	width: 1600px;
+	margin: 10px 40px;
+	display: flex;
+	justify-content: space-evenly;
+	flex: 1;
+}
+
+.contactus li {
+	display: block;
+}
+.contactus li a {
+	color: #000000;
+}
+.phone-email {
+	max-width: 300px;
+}
+.leave-message {
+	max-width: 200px;
+}
+.submit {
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #9d9fa9;
+	padding: 8px 16px;
+	border: #9d9fa9;
+}
+input,
+textarea {
+	border: 1px solid #9d9fa9;
+	margin: 10px;
+	padding: 4px;
+}
+
+.contactus label {
+	color: #9d9fa9;
+	font-size: 20px;
+	font-family: "Josefin Slab", "Josefin Sans", sans-serif;
+	text-transform: capitalize;
+}
+
+/* about us*/
+
+.about-text {
+	max-width: 100%;
+	margin: 100px 200px;
+	display: flex;
+	text-align: start;
+	justify-content: space-evenly;
+}
+.about-text h1,
+h2 {
+	font-size: 48px;
+}
+
+.about-text > * {
+	flex: 1;
+}
+.about-img img {
+	width: 50%;
+}
+.about-img {
+	display: flex;
 }
