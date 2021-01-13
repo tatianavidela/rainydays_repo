@@ -21,22 +21,20 @@ body {
 
 header > * {
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
 }
 
 nav {
 	background-color: #0a3641;
 	width: 100%;
-}
-nav ul {
 	padding: 0px;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 nav li {
 	display: inline-block;
+	text-align: center;
 }
+
 footer {
 	background-color: #0a3641;
 	align-items: center;
@@ -56,7 +54,7 @@ a {
 }
 header a {
 	color: #ddd3ae;
-	padding: 20px 40px;
+	padding: 20px 20px;
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 3px;
@@ -84,9 +82,8 @@ header a {
 	left: 46px;
 }
 .logo {
-	max-width: 180px;
+	width: 120px;
 	padding-top: 10px;
-	margin-left: 12px;
 }
 .subscribe-here {
 	color: #9d9fa9;
@@ -119,22 +116,22 @@ footer li a {
 }
 .new-collection {
 	position: relative;
+	text-align: center;
 }
 .new-collection-homepage h1 {
 	position: absolute;
-	text-align: center;
 	left: 24%;
-	top: 60px;
+	top: 200px;
 	padding: 20px;
 	font-family: "IM Fell English SC", serif;
 	color: #9c3611;
-	font-size: 40px;
+	font-size: 300%;
 	letter-spacing: 16px;
 }
 .new-collection-homepage a {
 	position: relative;
-	top: 200px;
-	left: 42%;
+	top: 380px;
+	left: 90px;
 	font-size: 18px;
 	color: black;
 	text-decoration: underline;
@@ -215,4 +212,23 @@ footer li a {
 
 .yellowclassic li {
 	display: block;
+}
+
+/*yellow classic page*/
+.yellowclassicinfo li {
+	display: block;
+	width: 20%;
+}
+.yellowclassic-product-page img {
+	width: 30%;
+}
+
+/*about page*/
+
+.about img {
+	width: 600px;
+}
+
+.discover img {
+	width: 600px;
 }
