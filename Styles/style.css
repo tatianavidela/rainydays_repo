@@ -123,6 +123,12 @@ header a {
 	width: 120px;
 	padding-top: 10px;
 }
+.search-btn {
+	background-color: transparent;
+	border: none;
+	font-size: 24px;
+	color: #ddd3ae;
+}
 .subscribe-here {
 	color: #9d9fa9;
 	background-color: white;
@@ -141,7 +147,6 @@ footer li a {
 	color: #9d9fa9;
 }
 /*home page*/
-
 .new-collection-homepage {
 	display: flex;
 }
@@ -241,7 +246,6 @@ footer li a {
 }
 
 /*jacket-list*/
-
 .sort-filter {
 	border: solid;
 	width: 10%;
@@ -272,27 +276,7 @@ footer li a {
 	display: block;
 }
 
-/*yellow classic page*/
-.yellowclassicinfo li {
-	display: block;
-	width: 20%;
-}
-.yellowclassic-product-page img {
-	width: 30%;
-}
-
-/*about page*/
-
-.about img {
-	width: 600px;
-}
-
-.discover img {
-	width: 600px;
-}
-
 /*contact us*/
-
 .contactus {
 	width: 1600px;
 	margin: 10px 40px;
@@ -336,25 +320,53 @@ textarea {
 }
 
 /* about us*/
-
 .about-text {
+	line-height: 2;
+	font-size: 22px;
 	max-width: 100%;
-	margin: 100px 200px;
+	margin: 60px 100px;
 	display: flex;
-	text-align: start;
+	text-align: left;
 	justify-content: space-evenly;
+}
+.about-text p {
+	display: none;
 }
 .about-text h1,
 h2 {
 	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
 }
-
+.about-text h2:hover + p {
+	display: block;
+	background-color: #f8f7f4;
+}
+.about-text h1:hover + p {
+	display: block;
+	background-color: #f8f7f4;
+}
 .about-text > * {
 	flex: 1;
+	margin: 50px;
 }
 .about-img img {
 	width: 50%;
+	height: 600px;
+	object-fit: cover;
+	object-position: 20%;
 }
 .about-img {
 	display: flex;
+}
+
+/*yellow classic page*/
+.yellowclassicinfo li {
+	display: block;
+	width: 20%;
+}
+.yellowclassic-product-page img {
+	width: 16%;
+	height: 353px;
+	object-fit: cover;
 }
