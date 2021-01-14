@@ -11,20 +11,29 @@
 	font-family: "Josefin Sans", sans-serif;
 }
 body {
-	min-height: 100%;
-	min-width: 100%;
+	min-height: 100vh;
 	margin: 0px;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	background-color: #f8f7f4;
 }
-
-nav {
+header {
 	background-color: #0a3641;
-	min-width: max-content;
-	padding: 0px;
 	display: flex;
 	justify-content: center;
+}
+
+nav {
+	min-width: max-content;
+	margin: auto;
+	padding: 0px;
+	display: none;
+}
+#hamburger-menu {
+	display: none;
+}
+#hamburger-menu:checked ~ nav {
+	display: block;
 }
 nav ul {
 	padding: 0px;
@@ -44,7 +53,7 @@ footer {
 footer li {
 	display: inline-block;
 	padding: 20px;
-	margin: 40px auto;
+	margin: 10px auto;
 }
 
 /*links*/
@@ -147,37 +156,35 @@ footer li a {
 	color: #9d9fa9;
 }
 /*home page*/
-.new-collection-homepage {
+.new-collection-homepage,
+.city-collection-homepage {
 	display: flex;
+	max-width: 100vw;
 }
-.new-collection-homepage > * {
+.new-collection-homepage > *,
+.city-collection-homepage > * {
 	flex: 1;
+	height: 600px;
 }
 .new-collection_img {
-	background-image: url("../images/2pexels-matt-hardy-2755165.jpg");
-	min-height: 160vh;
+	background-image: url("../images/pexels-matt-hardy-2755165.jpg");
+	height: 900px;
+	width: 100%;
 	background-size: cover;
-	background-position-y: top;
-	background-position-x: center;
 }
-.new-collection {
-	position: relative;
+.new-collection-homepage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 .new-collection-homepage h1 {
-	position: absolute;
-	left: 24%;
-	top: 200px;
-	padding: 20px;
 	font-family: "IM Fell English SC", serif;
 	color: #9c3611;
-	font-size: 300%;
+	font-size: 4vw;
 	letter-spacing: 16px;
 }
 .new-collection-homepage a {
-	position: relative;
-	top: 380px;
-	left: 90px;
 	font-size: 18px;
 	color: black;
 	text-decoration: underline;
@@ -186,18 +193,13 @@ footer li a {
 	letter-spacing: 5px;
 	padding: 12px;
 }
-
-.city-collection-homepage > * {
-	flex: 1;
-}
 .city-collection-homepage {
 	display: flex;
-}
-.city-collection {
-	position: relative;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .city-collection-homepage h2 {
-	position: absolute;
 	padding: 20px;
 	top: 200px;
 	left: 90px;
@@ -207,7 +209,6 @@ footer li a {
 	font-weight: normal;
 }
 .city-collection-homepage a {
-	position: relative;
 	padding: 20px;
 	top: 390px;
 	left: 90px;
@@ -220,7 +221,7 @@ footer li a {
 }
 .city-collection_img {
 	background-image: url("../images/2pexels-cottonbro-3205741.jpg");
-	min-height: 160vh;
+	height: 900px;
 	background-size: cover;
 	background-position-y: bottom;
 	background-position-x: center;
@@ -246,9 +247,15 @@ footer li a {
 }
 
 /*jacket-list*/
+.jackets {
+	margin: 20px auto;
+	width: 1600px;
+	display: flex;
+}
 .sort-filter {
 	border: solid;
-	width: 10%;
+	width: 20%;
+	height: fit-content;
 }
 
 .sort label::after {
@@ -269,19 +276,48 @@ footer li a {
 }
 
 .yellowclassic img {
-	width: 20vh;
+	width: 100%;
 }
 
 .yellowclassic li {
 	display: block;
 }
 
+.all-jackets {
+	margin: 40px;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.all-jackets ul {
+	padding: 0;
+	margin: 0;
+}
+.all-jackets .yellowclassic {
+	padding: 20px 20px;
+	margin: 40px 40px;
+}
 /*contact us*/
+.contactus-main h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+	padding: 30px;
+	margin: 0 auto;
+}
+.contactus-main h2,
+h3,
+h4 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
 .contactus {
-	width: 1600px;
-	margin: 10px 40px;
+	width: 1200px;
+	margin: 20px auto;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex: 1;
 }
 
@@ -291,15 +327,21 @@ footer li a {
 .contactus li a {
 	color: #000000;
 }
-.phone-email {
+.phone-email,
+.leave-message,
+.social-media {
 	max-width: 300px;
+	text-align: left;
+	line-height: 2;
 }
-.leave-message {
-	max-width: 200px;
+.social-media li {
+	line-height: 4;
+	font-size: 1.3em;
 }
+
 .submit {
 	color: white;
-	font-size: 14px;
+	font-size: 1em;
 	text-transform: uppercase;
 	background-color: #9d9fa9;
 	padding: 8px 16px;
@@ -314,7 +356,7 @@ textarea {
 
 .contactus label {
 	color: #9d9fa9;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-family: "Josefin Slab", "Josefin Sans", sans-serif;
 	text-transform: capitalize;
 }
@@ -361,6 +403,7 @@ h2 {
 }
 
 /*yellow classic page*/
+
 .yellowclassicinfo li {
 	display: block;
 	width: 20%;
