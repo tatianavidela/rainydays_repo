@@ -28,14 +28,49 @@
       </nav>  
     </header>
     <main class="checkout-page">
-      <section>
+      <section class="section1">
         <h1> 1 personal details & shipping</h1>
-        <p><span class="login-cta">login</span></a> or register here </p>
-        
-        <label for="name">first name: <input type="text" name="name"></label>
-        <label for="name"> ast name: <input type="text" name="name"></label>
-        <label for="email">email: <input type="text" name="email"></label>
-        <label for="tel">mobile: <input type="tel" name="tel"></label> 
+        <p></p><span>login</span> or register here </p> 
+        <p><label for="name">first name*: <input type="text" name="name"></label><label for="name"> last name*: <input type="text" name="name"></label></p>
+        <p></p>
+        <p> <label for="email">email*: <input type="text" name="email"></label></p>
+        <p><label for="tel">mobile: <input type="tel" name="tel"></label></p>
+        <p><label for="address">address*: <input type="text" name="address"></label></p>
+        <p><label for="city">city*: <input type="text" name="city"></label></p>
+        <p><label for="number">zip code*: <input type="number" name="number"></label></p>
+        <button class="next">next</button>
+      </section>
+      <section class="section2">
+        <h2> 2 payment</h2>
+        <input type="radio" name="card" value="card" id="card"><label for="card">credit/bank card <i class="fas fa-credit-card"></i></label>
+        <input type="radio" name="paypal" value="paypal" id="paypal"><label for="paypal">paypal <i class="fab fa-cc-paypal"></i></label>
+        <label for="number">card number*: <input type="number" name="number"></label>
+        <label for="name">card holder*: <input type="text" name="name"></label>
+        <label for="number">expire date*: <input type="number" name="number"></label>
+        <label for="number">CVC*: <input type="number" name="number"></label>
+        <button class="back">back</button>
+        <button class="next">next</button>
+      </section>
+      <section class="section3">
+        <h3> 3 review</h3>
+
+        <table>
+          <tr>
+            <th>products</th>
+            <th>price</th>
+          </tr>
+          <tr>
+            <td>yellow classic - quantity: 1 -</td>
+            <td>NOK 700</td>
+          </tr>
+          <tr>
+            <th>total products:1 </th>
+            <th></th>
+          </tr>
+        </table>
+
+        <button class="back">back</button>
+        <a href="checkout-success.html"><button class="confirm-payment">confirm-payment</button></a>
       </section>
     </main>
     <footer>
