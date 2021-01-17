@@ -20,9 +20,9 @@
       <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
-          <li><a href="">collection</a></li>
-          <li><a href="">Women</a></li>
-          <li><a href="">men</a></li>
+          <li><a href="jacket-list.html">collection</a></li>
+          <li><a href="jacket-list.html">Women</a></li>
+          <li><a href="jacket-list.html">men</a></li>
           
         </ul>
       </nav>  
@@ -30,47 +30,85 @@
     <main class="checkout-page">
       <section class="section1">
         <h1> 1 personal details & shipping</h1>
-        <p></p><span>login</span> or register here </p> 
-        <p><label for="name">first name*: <input type="text" name="name"></label><label for="name"> last name*: <input type="text" name="name"></label></p>
-        <p></p>
-        <p> <label for="email">email*: <input type="text" name="email"></label></p>
-        <p><label for="tel">mobile: <input type="tel" name="tel"></label></p>
-        <p><label for="address">address*: <input type="text" name="address"></label></p>
-        <p><label for="city">city*: <input type="text" name="city"></label></p>
-        <p><label for="number">zip code*: <input type="number" name="number"></label></p>
-        <button class="next">next</button>
+        </p><span>login</span> or register here </p> 
+        <div class="section1_content">
+          <div>
+            <label for="name">first name*: </label>
+            <input type="text" name="name">
+            <label for="name"> last name*:</label>
+            <input type="text" name="name">
+          </div>
+          <div>
+            <label for="email">email*:</label>
+            <input type="text" name="email">
+          </div>
+          <div>
+            <label for="tel">mobile:</label>
+            <input type="tel" name="tel">
+          </div>
+          <div>
+            <label for="address">address*:</label>
+            <input type="text" name="address">
+          </div>
+          <div>
+            <label for="city">city*:</label>
+            <input type="text" name="city">
+          </div>
+          <div>
+            <label for="number">zip code*:</label>
+            <input type="number" name="number">
+          </div>
+        </div>
       </section>
       <section class="section2">
         <h2> 2 payment</h2>
-        <input type="radio" name="card" value="card" id="card"><label for="card">credit/bank card <i class="fas fa-credit-card"></i></label>
-        <input type="radio" name="paypal" value="paypal" id="paypal"><label for="paypal">paypal <i class="fab fa-cc-paypal"></i></label>
-        <label for="number">card number*: <input type="number" name="number"></label>
-        <label for="name">card holder*: <input type="text" name="name"></label>
-        <label for="number">expire date*: <input type="number" name="number"></label>
-        <label for="number">CVC*: <input type="number" name="number"></label>
-        <button class="back">back</button>
-        <button class="next">next</button>
+        <div class="section2_content">
+          <div>
+            <input type="radio" name="card" value="card" id="card">
+            <label for="card">credit/bank card </label>
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div>
+            <input type="radio" name="paypal" value="paypal" id="paypal">
+            <label for="paypal">paypal </label>
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+          <div>
+            <label for="text">card number*:</label> 
+            <input type="text" name="text">
+            <label for="name">card holder*: </label>
+            <input type="text" name="name">
+            <label for="text">expire date*: </label>
+            <input type="text" name="text">
+            <label for="text">CVC*: </label>
+            <input type="text" name="text">
+          </div>
+        </div>
       </section>
       <section class="section3">
         <h3> 3 review</h3>
-
-        <table>
-          <tr>
-            <th>products</th>
-            <th>price</th>
-          </tr>
-          <tr>
-            <td>yellow classic - quantity: 1 -</td>
-            <td>NOK 700</td>
-          </tr>
-          <tr>
-            <th>total products:1 </th>
-            <th></th>
-          </tr>
-        </table>
-
-        <button class="back">back</button>
-        <a href="checkout-success.html"><button class="confirm-payment">confirm-payment</button></a>
+        <div class="section3_content">
+          <table>
+            <tr>
+              <th>products</th>
+              <th>price</th>
+            </tr>
+            <tr>
+              <td>yellow classic - quantity: 1 -</td>
+              <td>NOK 700</td>
+            </tr>
+            <tr>
+              <th>total products:1 </th>
+              <th></th>
+            </tr>
+          </table>
+          <p>subtotal: NOK 700</p>
+          <p>shipping: NOK 49</p>
+          <p>total: NOK 749</p>
+          <div class="confirm">
+            <a href="checkout-success.html" >confirm payment</a>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
