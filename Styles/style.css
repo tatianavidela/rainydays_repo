@@ -84,8 +84,8 @@ header a {
 	font-size: 1em;
 }
 .logo {
-	width: 20vw;
-	padding-top: 10px;
+	width: 100px;
+	padding: 10px;
 }
 footer ul {
 	flex-direction: column;
@@ -487,9 +487,9 @@ textarea {
 	flex: 1;
 }
 .yellow-classic_productpage img {
-	height: 200px;
+	max-width: 300px;
 	object-fit: contain;
-	margin: 10px auto;
+	margin: 20px;
 }
 .yellow-classic_info ul {
 	padding: 0;
@@ -502,35 +502,35 @@ textarea {
 	margin: 0 auto;
 	font-size: 20px;
 }
-#blue {
+.blue {
 	height: 10px;
 	width: 10px;
 	border-radius: 50%;
 	background-color: blue;
 	display: inline-block;
 }
-#red {
+.red {
 	height: 10px;
 	width: 10px;
 	border-radius: 50%;
 	background-color: red;
 	display: inline-block;
 }
-#yellow {
+.yellow {
 	height: 10px;
 	width: 10px;
 	border-radius: 50%;
 	background-color: yellow;
 	display: inline-block;
 }
-#green {
+.green {
 	height: 10px;
 	width: 10px;
 	border-radius: 50%;
 	background-color: green;
 	display: inline-block;
 }
-#black {
+.black {
 	height: 10px;
 	width: 10px;
 	border-radius: 50%;
@@ -721,26 +721,8 @@ td {
 }
 
 @media (min-width: 600px) {
-	header label {
-		display: none;
-	}
-	header {
-		justify-content: space-evenly;
-	}
-	header a {
-		font-size: 1vw;
-	}
-	nav {
-		display: contents;
-		margin: 0px;
-		position: static;
-		top: 0px;
-	}
-	nav li {
-		display: inline-block;
-	}
 	.logo {
-		width: 80px;
+		width: 140px;
 	}
 	footer ul {
 		padding: 0px;
@@ -770,9 +752,28 @@ td {
 }
 
 @media (min-width: 800px) {
-	nav li a {
-		padding: 40px;
+	.logo {
+		width: 150px;
 	}
+	header label {
+		display: none;
+	}
+	header {
+		justify-content: space-evenly;
+	}
+	header a {
+		font-size: 0.7em;
+	}
+	nav {
+		display: contents;
+		margin: 0px;
+		position: static;
+		top: 0px;
+	}
+	nav li {
+		display: inline-block;
+	}
+
 	.new-collection_img {
 		min-height: 1000px;
 	}
@@ -815,7 +816,7 @@ td {
 		justify-content: space-evenly;
 	}
 	.yellow-classic_productpage img {
-		height: 400px;
+		width: 400px;
 	}
 	.checkout-page {
 		flex-direction: row;
@@ -824,5 +825,20 @@ td {
 	.order-info {
 		width: 50%;
 		margin: 0px auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	.logo {
+		width: 200px;
+	}
+	header a {
+		font-size: 1em;
+		padding: 5px;
+	}
+}
+@media (min-width: 1400px) {
+	header a {
+		margin: 20px;
 	}
 }
