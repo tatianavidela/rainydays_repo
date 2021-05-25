@@ -46,14 +46,54 @@
           <h2>phone and email</h2>
           <p>Telephone +4712345678 </p><p>We will gladly answer your questions.  (08-16, mon - fri)</p><p>Email contact@rainydays.com</p>
         </div> 
+
         <div class="leave-message">
-          <h3>Or leave a message here</h3>
-          <p> <label for="email">email:</p><p><input type="text" name="email"></label></p>       
-          <p><label for="name"> name:</p> <p><input type="text" name="name"></label></p>
-          <p><label for="message">Leave your message here:</p> <p><textarea name="message" id="message" cols="30" rows="10"></textarea></p><p></label> <input type="submit" value="Submit" class="submit"></p>
+          <h2>Or leave a message here</h2>
+
+
+
+
+          <form action="submit.php" method="POST" name="form" id="contact-form">
+
+            <div>
+              <label for="name">
+                Name: (required)
+                <input name="name" id="name"/>
+              </label>
+              <div class="formError" id="nameError">
+                Please enter a name
+              </div>
+            </div>
+
+            <div>
+              <label for="email">Email: (required)
+                <input name="email" id="email" />
+              </label>
+              <div class="formError" id="emailError">
+                Please enter a valid email address
+              </div>
+            </div>
+
+            <div>
+              <label for="message">
+                Message: (required) <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              </label>
+              <div class="formError" id="messageError">
+                Please dont leave this empty
+              </div>
+            </div>
+            
+            <input value="Submit" type="submit" name="submit" id="submit">
+
+          </form>
+
+
+
+
         </div>
+
         <div class="social-media">
-          <h4>social media</h4>
+          <h2>social media</h2>
           <li><a href=""><i class="fab fa-instagram" alt="instagram"></i> @rainydays</a></li>
           <li><a href=""><i class="fab fa-facebook" alt="facebook"></i>Facebook.com/rainydays</a></li>
           <li><a href=""><i class="fab fa-youtube" alt="youtube"></i>Youtube.com/user/rainydays</a></li>
@@ -70,5 +110,7 @@
         <li><a href="contact.html">Contact us</a></li>
       </ul>
     </footer>
+
+    <script src="js/contact.js"></script>
   </body>
 </html>
