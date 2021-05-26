@@ -15,7 +15,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="tyles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/jjs7nyr.css">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta name="description" content="Login here to your personal account">
@@ -39,6 +39,55 @@
       </nav>
     </header>
 
+
+    <main>
+
+      <div class="login-container">
+
+        <h1>Login</h1>
+
+
+        <form id="login-form">
+
+        
+
+          <div>
+            <label for="email">Email: 
+              <input name="email" id="loginEmail" />
+            </label>
+            <div class="loginFormError" id="loginEmailError">
+              Please enter a valid email address
+            </div>
+          </div>
+
+          <div>
+            <label for="password">Password:
+              <input type="password" name="password" id="loginPassword" />
+            </label>
+            <div class="loginFormError" id="loginPasswordError">
+              Please enter a valid password
+            </div>
+          </div>
+
+          
+
+          
+          <input value="Login" type="submit" name="submit" id="submit">
+
+        </form>
+        
+        <h2>or register</h2>
+
+
+
+      </div>
+
+    </main>
+
+
+
+
+
     <footer>
       <ul>
         <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -49,5 +98,7 @@
         <li><a href="contact.html">Contact us</a></li>
       </ul>
     </footer>
+
+    <script src="js/login.js"></script>
   </body>
 </html>
