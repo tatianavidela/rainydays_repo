@@ -26,7 +26,7 @@ header {
 	color: #ddd3ae;
 }
 nav {
-	position: fixed;
+	position: absolute;
 	display: none;
 	background-color: #0a3641;
 	top: 50px;
@@ -326,9 +326,13 @@ textarea {
 
 /*yellow classic page*/
 .jacket-specific_page h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	text-transform: uppercase;
+	font-weight: 400;
 	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
+	text-decoration: underline;
 }
 .yellow-classic_productpage {
 	display: flex;
@@ -415,11 +419,12 @@ textarea {
 /*products*/
 
 .products-page h1 {
-	margin: 10px auto;
-	text-align: center;
+	font-size: 2em;
 	text-transform: uppercase;
-	padding: 20px;
-	letter-spacing: 4px;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
 	text-decoration: underline;
 }
 
@@ -487,7 +492,8 @@ textarea {
 
 .bag-image {
 	margin: 10px;
-	width: 50px;
+	max-width: 50px;
+	max-height: 80px;
 }
 .bag-list {
 	padding: 5px;
@@ -495,12 +501,12 @@ textarea {
 
 /*bag page*/
 .bag-page h1 {
-	font-size: 24px;
-	text-align: center;
-	margin: 10px auto;
+	font-size: 2em;
 	text-transform: uppercase;
-	padding: 20px;
-	letter-spacing: 4px;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
 	text-decoration: underline;
 }
 .bag-item {
@@ -535,11 +541,12 @@ textarea {
 }
 /*checkout page*/
 .checkout-page-container h1 {
-	text-align: center;
-	margin: 10px auto;
+	font-size: 2em;
 	text-transform: uppercase;
-	padding: 20px;
-	letter-spacing: 4px;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
 	text-decoration: underline;
 }
 .checkout-page {
@@ -682,6 +689,8 @@ label {
 .fa-check-circle {
 	color: rgb(255, 230, 149);
 }
+
+/*login*/
 
 @media (min-width: 600px) {
 	.logo {
