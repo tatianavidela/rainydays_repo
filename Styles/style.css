@@ -691,6 +691,30 @@ label {
 }
 
 /*login*/
+.loginFormError {
+	display: none;
+	color: rgb(241, 86, 86);
+	font-size: 14px;
+	margin-top: 2px;
+}
+.login-page {
+	display: flex;
+	flex-direction: column;
+	max-width: 80%;
+	margin: 20px auto;
+}
+.login-page h1 {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
+	text-decoration: underline;
+}
+.login-container1 {
+	max-width: 200px;
+}
 
 @media (min-width: 600px) {
 	.logo {

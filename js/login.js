@@ -7,29 +7,30 @@ const loginEmailError = document.querySelector ("#loginEmailError")
 const loginPassword = document.querySelector ("#loginPassword")
 const loginPasswordError = document.querySelector ("#loginPasswordError")
 
-
+const loginformMessage = document.querySelector(".loginform-message");
 
 
 
 function validateLoginForm (event) {
     event.preventDefault();
 
-    if (validateEmail(email.value) === true) {
-        emailError.style.display = "none";
+    if (validateEmail(loginEmail.value) === true) {
+        loginEmailError.style.display = "none";
     } else {
-        emailError.style.display = "block";
+        loginEmailError.style.display = "block";
     }
 
     if(checkLength(loginPassword.value, 6) === true) {
-        messageError.style.display = "none";
+        loginPasswordError.style.display = "none";
     } else {
-        messageError.style.display = "block";
+        loginPasswordError.style.display = "block";
     }
+ validForm()
 }
 
 
 
-loginForm.addEventListener ("login", validateLoginForm);
+loginForm.addEventListener ("submit", validateLoginForm);
 
 
 function checkLength (value, len){
@@ -44,4 +45,13 @@ function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
     return patternMatches;
+}
+
+function validForm () {
+    if (validateEmail(loginEmail.value) && checkLength(loginPassword.value, 6)) {
+        loginformMessage.innerHTML = `<div class="validform"> You are now logged in </div> `;
+        loginForm.reset();
+    } else {
+        loginformMessage.innerHTML = `<div class="unvalidform"> Wrong password or email </div> `;
+     }
 }

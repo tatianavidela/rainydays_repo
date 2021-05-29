@@ -4,6 +4,8 @@ const bag = document.querySelector(".bag");
 const bagList = document.querySelector(".bag-list");
 const totalContainer = document.querySelector(".total-bag");
 
+const minimizeButton = document.querySelector(".minimize-button")
+
 
 let bagArray= [];
 
@@ -21,12 +23,13 @@ productArray.forEach(function(product){
 });
 
 const buttons = document.querySelectorAll("button");
+
 buttons.forEach(function(button){
     button.onclick= function(event) {
         const itemToAdd = productArray.find(item=> item.id === event.target.dataset.product);
         bagArray.push(itemToAdd);
         showBag(bagArray)
-        localStorage.setItem("bagList",JSON.stringify(bagArray));
+        localStorage.setItem("bagList",JSON.stringify(bagArray));  
     }
 })
 
@@ -44,4 +47,11 @@ function showBag(bagItems){
         `
     })
     totalContainer.innerHTML = `Total: ${total}`;
+
 }
+
+function hideBag(){
+    bag.style.display="none"
+}
+
+minimizeButton.addEventListener("click",hideBag)

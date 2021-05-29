@@ -6,6 +6,8 @@ const emailError = document.querySelector ("#emailError")
 const message = document.querySelector ("#message")
 const messageError = document.querySelector ("#messageError")
 
+const formMessage = document.querySelector(".form-message")
+
 
 function validateForm (event) {
     event.preventDefault();
@@ -27,6 +29,7 @@ function validateForm (event) {
     } else {
         messageError.style.display = "block";
     }
+    validForm ();
 }
 
 
@@ -46,4 +49,13 @@ function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
     return patternMatches;
+}
+
+function validForm () {
+    if (checkLength(theName.value, 0) && validateEmail(email.value) && checkLength(message.value, 2)) {
+        formMessage.innerHTML = `<div class="validform"> Thank you! We will contact you as soon as possible. </div> `;
+        form.reset();
+    } else {
+        formMessage.innerHTML = `<div class="unvalidform"> The form is incomplete </div> `;
+     }
 }
