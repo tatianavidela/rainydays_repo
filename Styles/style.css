@@ -703,7 +703,7 @@ label {
 	max-width: 80%;
 	margin: 20px auto;
 }
-.login-page h1 {
+.login-page-container h1 {
 	font-size: 2em;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -714,6 +714,9 @@ label {
 }
 .login-container1 {
 	max-width: 200px;
+}
+.login-container2 {
+	max-width: 300px;
 }
 
 @media (min-width: 600px) {
@@ -747,6 +750,10 @@ label {
 	}
 	.products {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.login-page {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }
 
