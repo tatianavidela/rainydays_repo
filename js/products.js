@@ -1,4 +1,4 @@
-const baseUrl = "https://tatianavidela.online/wp-json/wc/store/products";
+const baseUrl = "https://rainydays.tatianavidela.online/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products")
 
 async function getProducts(url){
