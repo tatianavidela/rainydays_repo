@@ -12,7 +12,7 @@ const id = params.get("id")
 
 console.log(id)
 
-const url = "https://tatianavidela.online/wp-json/wc/store/products/" + id;
+const url = "https://rainydays.tatianavidela.online/wp-json/wc/store/products/" + id;
 
 async function fetchProduct() {
     const response = await fetch(url);
