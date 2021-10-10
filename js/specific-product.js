@@ -18,6 +18,8 @@ async function fetchProduct() {
     const response = await fetch(url);
     const specificProduct = await response.json();
 
+    specificProductContainer.innerHTML ="";
+
     createHtml(specificProduct);
 }
 
@@ -25,17 +27,17 @@ fetchProduct();
 
 function createHtml(specificProduct) {
     specificProductContainer.innerHTML =
-    `
-    <div>
+    `<div class="specific-product-container-1">
         <h2>${specificProduct.name}</h2>
-        <p>${specificProduct.description}</p>
-        <p>${specificProduct.price_html}</p>
+        <img src="${specificProduct.images[0].src}" />
+    </div>
+    <div class="specific-product-container-2">
+       ${specificProduct.description}
+        ${specificProduct.price_html}
         <div class="specific-product_cta">
             <button type="button">Add to bag</button>
+            <button type="button"> <a href="checkout.html">Buy now</button>
         </div>
-    </div>
-    <div>
-        <img src="${specificProduct.images[0].src}" />
     </div>
     `
 }

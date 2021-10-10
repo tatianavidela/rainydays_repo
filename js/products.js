@@ -1,11 +1,12 @@
 const baseUrl = "https://rainydays.tatianavidela.online/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products")
+let bagArray =[];
 
 async function getProducts(url){
     const response = await fetch(url);
     const products = await response.json();
 
-    console.log(products)
+    productContainer.innerHTML="";
 
     products.forEach(function(product){
         productContainer.innerHTML += `
@@ -14,9 +15,23 @@ async function getProducts(url){
             <h3>${product.name}</h3>
             <img src="${product.images[0].src}" />
             </a> 
-            <p><button class="product-button" type="button">Add to bag</button>${product.price_html}</p>
+            <p> ${product.price_html}</p>
+           <button class="product-button" data-product ="${product.id}">Add to bag</button> 
         </div>`
     })
+
+// const buttons = document.querySelectorAll("button");
+// buttons.forEach(function(button){
+//     button.onclick = function(event){
+//         const itemToAdd = products.find(item => item.id === event.target.dataset.product)
+//         bagArray.push(itemToAdd);
+//         
+//
+//         console.log(itemToAdd);
+//     }
+// })
+
+
 }
 
 getProducts(baseUrl);
